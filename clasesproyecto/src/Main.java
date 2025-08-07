@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) throws Exception {
 
-        persona p = new persona();
+        /*persona p = new persona();
         p.crearPersona();
         p.mostrarInformacion();
         p.creandoPersona();
@@ -9,8 +9,12 @@ public class Main {
         System.out.println("__________________________________________");
 
         tipoDePersona tp = new tipoDePersona();
-        tp.tipoRol();
+        tp.tipoRol();*/
         
+
+        horarioProfesor hp = new horarioProfesor();
+        hp.crearHorario();
+        hp.mostrarHorario();
 
     }
 }
