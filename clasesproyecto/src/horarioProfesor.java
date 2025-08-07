@@ -1,14 +1,12 @@
-import java.time.LocalDate;
-import java.time.LocalTime;
 import java.util.Scanner;
 
 public class horarioProfesor {
     private int idHorarioProfesor;
     private String materiaProfesor;
-    private LocalDate fechaInicioProfesor;
-    private LocalDate fechaFinalizacionProfesor;
-    private LocalTime horaInicioProfesor;
-    private LocalTime horaFinProfesor;
+    private String fechaInicioProfesor;
+    private String fechaFinalizacionProfesor;
+    private String horaInicioProfesor;
+    private String horaFinProfesor;
     private String instituto;
     private String recurrenciaDiaProfesor;
     private String identificacionProfesor;
@@ -18,8 +16,8 @@ public class horarioProfesor {
 
     }
 
-    public horarioProfesor(int idHorarioProfesor, String materiaProfesor, LocalDate fechaInicioProfesor,
-            LocalDate fechaFinalizacionProfesor, LocalTime horaInicioProfesor, LocalTime horaFinProfesor,
+    public horarioProfesor(int idHorarioProfesor, String materiaProfesor, String fechaInicioProfesor,
+            String fechaFinalizacionProfesor, String horaInicioProfesor, String horaFinProfesor,
             String instituto, String recurrenciaDiaProfesor, String identificacionProfesor,
             String identificacionPersona) {
         this.idHorarioProfesor = idHorarioProfesor;
@@ -42,19 +40,19 @@ public class horarioProfesor {
         return materiaProfesor;
     }
 
-    public LocalDate getfechaInicioProfesor() {
+    public String getfechaInicioProfesor() {
         return fechaInicioProfesor;
     }
 
-    public LocalDate getfechaFinalizacionProfesor() {
+    public String getfechaFinalizacionProfesor() {
         return fechaFinalizacionProfesor;
     }
 
-    public LocalTime gethoraInicioProfesor() {
+    public String gethoraInicioProfesor() {
         return horaInicioProfesor;
     }
 
-    public LocalTime gethoraFinProfesor() {
+    public String gethoraFinProfesor() {
         return horaFinProfesor;
     }
 
@@ -82,19 +80,19 @@ public class horarioProfesor {
         this.materiaProfesor = materiaProfesor;
     }
 
-    public void setfechaInicioProfesor(LocalDate fechaInicioProfesor) {
+    public void setfechaInicioProfesor(String fechaInicioProfesor) {
         this.fechaInicioProfesor = fechaInicioProfesor;
     }
 
-    public void setfechaFinalizacionProfesor(LocalDate fechaFinalizacionProfesor) {
+    public void setfechaFinalizacionProfesor(String fechaFinalizacionProfesor) {
         this.fechaFinalizacionProfesor = fechaFinalizacionProfesor;
     }
 
-    public void sethoraInicioProfesor(LocalTime horaInicioProfesor) {
+    public void sethoraInicioProfesor(String horaInicioProfesor) {
         this.horaInicioProfesor = horaInicioProfesor;
     }
 
-    public void sethoraFinProfesor(LocalTime horaFinProfesor) {
+    public void sethoraFinProfesor(String horaFinProfesor) {
         this.horaFinProfesor = horaFinProfesor;
     }
 
@@ -125,16 +123,16 @@ public class horarioProfesor {
         materiaProfesor = sc.nextLine();
 
         System.out.println("Ingrese la fecha de inicio (YYYY-MM-DD): ");
-        fechaInicioProfesor = LocalDate.parse(sc.nextLine());
+        fechaInicioProfesor = sc.nextLine();
 
         System.out.println("Ingrese la fecha de finalización (YYYY-MM-DD): ");
-        fechaFinalizacionProfesor = LocalDate.parse(sc.nextLine());
+        fechaFinalizacionProfesor = sc.nextLine();
 
         System.out.println("Ingrese la hora inicial (HH:mm): ");
-        horaInicioProfesor = LocalTime.parse(sc.nextLine());
+        horaInicioProfesor = sc.nextLine();
 
         System.out.println("Ingrese la hora fin (HH:mm): ");
-        horaFinProfesor = LocalTime.parse(sc.nextLine());
+        horaFinProfesor = sc.nextLine();
 
         System.out.println("Ingrese el instituto: ");
         instituto = sc.nextLine();
