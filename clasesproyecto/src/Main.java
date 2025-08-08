@@ -11,6 +11,8 @@ public class Main {
         tipoDePersona tp = new tipoDePersona();
         tp.tipoRol();
         
+        horarioAdmin horarioAdm = new horarioAdmin();
+        horarioAdm.ingresarHorario();
 
     }
 }
