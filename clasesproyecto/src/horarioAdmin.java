@@ -123,7 +123,7 @@ public class horarioAdmin {
     }
 
     public void ingresarHorario(){
-        System.out.println("Ingresar horario: ");
+        System.out.println("Admin Ingresa el horario del profesor: ");
         
         System.out.println("________________________");
         

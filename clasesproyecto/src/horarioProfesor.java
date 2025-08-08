@@ -9,16 +9,14 @@ public class horarioProfesor {
     private String horaFinProfesor;
     private String instituto;
     private String recurrenciaDiaProfesor;
-    private String identificacionProfesor;
     private String identificacionPersona;
 
     public horarioProfesor() {
-
     }
 
     public horarioProfesor(int idHorarioProfesor, String materiaProfesor, String fechaInicioProfesor,
             String fechaFinalizacionProfesor, String horaInicioProfesor, String horaFinProfesor,
-            String instituto, String recurrenciaDiaProfesor, String identificacionProfesor,
+            String instituto, String recurrenciaDiaProfesor,
             String identificacionPersona) {
         this.idHorarioProfesor = idHorarioProfesor;
         this.materiaProfesor = materiaProfesor;
@@ -28,7 +26,6 @@ public class horarioProfesor {
         this.horaFinProfesor = horaFinProfesor;
         this.instituto = instituto;
         this.recurrenciaDiaProfesor = recurrenciaDiaProfesor;
-        this.identificacionProfesor = identificacionProfesor;
         this.identificacionPersona = identificacionPersona;
     }
 
@@ -62,10 +59,6 @@ public class horarioProfesor {
 
     public String getrecurrenciaDiaProfesor() {
         return recurrenciaDiaProfesor;
-    }
-
-    public String getidentificacionProfesor() {
-        return identificacionProfesor;
     }
 
     public String getidentificacionPersona() {
@@ -104,10 +97,6 @@ public class horarioProfesor {
         this.recurrenciaDiaProfesor = recurrenciaDiaProfesor;
     }
 
-    public void setidentificacionProfesor(String identificacionProfesor) {
-        this.identificacionProfesor = identificacionProfesor;
-    }
-
     public void setidentificacionPersona(String identificacionPersona) {
         this.identificacionPersona = identificacionPersona;
     }
@@ -115,7 +104,7 @@ public class horarioProfesor {
     public void crearHorario() {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Ingrese el id Horario: ");
+        System.out.println("profesor Ingrese el id de tu Horario: ");
         idHorarioProfesor = sc.nextInt();
         sc.nextLine();
 
@@ -140,17 +129,17 @@ public class horarioProfesor {
         System.out.println("Ingrese la recurrencia: ");
         recurrenciaDiaProfesor = sc.nextLine();
 
-        System.out.println("Ingrese la identificación del profesor: ");
-        identificacionProfesor = sc.nextLine();
-
         System.out.println("Ingrese la identificación de la persona: ");
         identificacionPersona = sc.nextLine();
+
+        System.out.println("El Horario ha sido creado. ");
 
     }
 
     public void mostrarHorario() {
 
-        System.out.println("El Horario ha sido creado. ");
+        System.out.println("___________________________________");
+
         System.out.println("El id delhorario es: " + idHorarioProfesor);
         System.out.println("La materia es: " + materiaProfesor);
         System.out.println("La fecha inicial es: " + fechaInicioProfesor);
@@ -159,7 +148,6 @@ public class horarioProfesor {
         System.out.println("La hora de finalización: " + horaFinProfesor);
         System.out.println("El instituto es: " + instituto);
         System.out.println("La recurrencia es: " + recurrenciaDiaProfesor);
-        System.out.println("La identificación del profesor es: " + identificacionProfesor);
         System.out.println("La identificación personal: " + identificacionPersona);
     }
 
