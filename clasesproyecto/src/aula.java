@@ -31,7 +31,6 @@ public class aula {
     }
 
     public void elegirAula() {
-        Scanner scanner = new Scanner(System.in);
         System.out.println(
                 "Ingrese cantidad de estudiantes (1- De 1 a 20 estudiantes, 2- De 21 a 30 estudiantes, 3- De 31 a 40 estudiantes): ");
         idAula = sc.nextInt();
@@ -42,8 +41,7 @@ public class aula {
             System.out.println("Aula 502");
         } else if (idAula == 3) {
             System.out.println("Aula 503");
-
-            scanner.close();
         }
+        
     }
 }

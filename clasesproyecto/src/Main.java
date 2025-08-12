@@ -1,6 +1,8 @@
 public class Main {
     public static void main(String[] args) throws Exception {
-
+        
+        java.util.Scanner scanner = new java.util.Scanner(System.in);
+        
         tipoDePersona tp = new tipoDePersona();
         tp.tipoRol();
 
@@ -36,6 +38,8 @@ public class Main {
 
         aula aula = new aula();
         aula.elegirAula();
-
+        
+        
+        scanner.close();
     }
 }

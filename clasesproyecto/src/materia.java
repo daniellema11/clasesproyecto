@@ -23,7 +23,7 @@ public class materia {
         } else {
             System.out.println("Opción inválida");
         }
-        scanner.close();
+        
     }
     public materia() {
     }
