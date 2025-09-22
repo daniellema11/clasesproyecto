@@ -23,35 +23,6 @@ public class horarioAdmin extends horario {
         this.aula = aula;
     }
 
-    // public void ingresarHorario(){
-    //     System.out.println("Admin Ingresa el horario del profesor: ");
-        
-    //     System.out.println("________________________");
-        
-    //     System.out.println("Ingrese el Id del Horario: ");
-    //     idHorario = sc.nextInt();
-    //     sc.nextLine();
-
-    //     System.out.println("Ingrese el Inicio del Periodo: ");
-    //     inicioPeriodo = sc.nextLine();
-
-    //     System.out.println("Ingrese el Fin del Periodo: ");
-    //     finPeriodo = sc.nextLine();
-
-    //     System.out.println("Ingrese la Materia: ");
-    //     materia = sc.nextLine();
-
-    //     System.out.println("Ingrese la Sede: ");
-    //     sede = sc.nextLine();
-
-    //     System.out.println("Ingrese el Aula: ");
-    //     aula = sc.nextLine();
-
-
-    //     System.out.println("Horario ingresado correctamente.");
-    // }
-
-    
     @Override
 
     public void mostrarHorario() {

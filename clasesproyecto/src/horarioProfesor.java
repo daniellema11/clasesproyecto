@@ -19,27 +19,6 @@ public class horarioProfesor extends horario {
     
     }
 
-
-    // public void crearHorario() {
-    //     Scanner sc = new Scanner(System.in);
-
-    //     System.out.println("profesor Ingrese el id de tu Horario: ");
-    //     idHorarioProfesor = sc.nextInt();
-    //     sc.nextLine();
-    //     System.out.println("Ingrese el instituto: ");
-    //     instituto = sc.nextLine();
-    //     System.out.println("El Horario ha sido creado. ");
-
-    // }
-
-    // public void mostrarHorario() {
-
-    //     System.out.println("___________________________________");
-    //     System.out.println("El id delhorario es: " + idHorarioProfesor);
-    //     System.out.println("El instituto es: " + instituto);
-        
-    // }
-
    @Override 
 
    public void mostrarHorario() {

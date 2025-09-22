@@ -5,29 +5,6 @@ public class materia {
     private int id_materia;
     
     
-
-
-     public void nombreMaterias() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Seleccione una materia:");
-        System.out.println("1. Gestion de Base de Datos");
-        System.out.println("2. Programación de Aplicaciones Móviles 1");
-        System.out.println("3. Programacion para la WEB 1");
-        System.out.print("Ingrese el número de la opción: ");
-
-        int opcion = scanner.nextInt();
-
-        if (opcion == 1) {
-            System.out.println("Opción 1: Gestion de Base de Datos");
-        } else if (opcion == 2) {
-            System.out.println("Opción 2: Programación de Aplicaciones Móviles 1");
-        } else if (opcion == 3) {
-            System.out.println("Opción 3: Programacion para la WEB 1");
-        } else {
-            System.out.println("Opción inválida");
-        }
-        
-    }
     public materia() {
     }
 
