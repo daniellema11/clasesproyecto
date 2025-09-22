@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
-public class persona {
-    private String identificacionPersona;
-    private String nombrePersona;
-    private String correoPersona;
-    private String contrasenaPersona;
-    private int id_rol;
+public abstract class persona {
+    protected String identificacionPersona;
+    protected String nombrePersona;
+    protected String correoPersona;
+    protected String contrasenaPersona;
+    protected int id_rol;
 
     Scanner sc = new Scanner(System.in);
 
@@ -47,44 +47,47 @@ public class persona {
         System.out.println("creando usuario persona");
     }
 
-    public String getIdentificacionPersona() {
-        return identificacionPersona;
-    }
+    // public String getIdentificacionPersona() {
+    //     return identificacionPersona;
+    // }
 
-    public void setIdentificacionPersona(String identificacionPersona) {
-        this.identificacionPersona = identificacionPersona;
-    }
+    // public void setIdentificacionPersona(String identificacionPersona) {
+    //     this.identificacionPersona = identificacionPersona;
+    // }
 
-    public String getNombrePersona() {
-        return nombrePersona;
-    }
+    // public String getNombrePersona() {
+    //     return nombrePersona;
+    // }
 
-    public void setNombrePersona(String nombrePersona) {
-        this.nombrePersona = nombrePersona;
-    }
+    // public void setNombrePersona(String nombrePersona) {
+    //     this.nombrePersona = nombrePersona;
+    // }
 
-    public String getCorreoPersona() {
-        return correoPersona;
-    }
+    // public String getCorreoPersona() {
+    //     return correoPersona;
+    // }
 
-    public void setCorreoPersona(String correoPersona) {
-        this.correoPersona = correoPersona;
-    }
+    // public void setCorreoPersona(String correoPersona) {
+    //     this.correoPersona = correoPersona;
+    // }
 
-    public String getContrasenaPersona() {
-        return contrasenaPersona;
-    }
+    // public String getContrasenaPersona() {
+    //     return contrasenaPersona;
+    // }
 
-    public void setContrasenaPersona(String contrasenaPersona) {
-        this.contrasenaPersona = contrasenaPersona;
-    }
+    // public void setContrasenaPersona(String contrasenaPersona) {
+    //     this.contrasenaPersona = contrasenaPersona;
+    // }
 
-    public int getId_rol() {
-        return id_rol;
-    }
+    // public int getId_rol() {
+    //     return id_rol;
+    // }
 
-    public void setId_rol(int id_rol) {
-        this.id_rol = id_rol;
-    }
+    // public void setId_rol(int id_rol) {
+    //     this.id_rol = id_rol;
+    // }
+
+    public abstract void mostrarRol();
+    
 
 }

@@ -3,6 +3,9 @@ import java.util.Scanner;
 public class materia {
     private String nombremateria;
     private int id_materia;
+    
+    
+
 
      public void nombreMaterias() {
         Scanner scanner = new Scanner(System.in);
