@@ -1,26 +1,9 @@
-import java.util.Scanner;
-
 public abstract class persona {
     protected String identificacionPersona;
     protected String nombrePersona;
     protected String correoPersona;
     protected String contrasenaPersona;
     protected int id_rol;
-
-    Scanner sc = new Scanner(System.in);
-
-    public void crearPersona() {
-        System.out.print("Ingrese la identificacion de la persona: ");
-        identificacionPersona = sc.nextLine();
-        System.out.print("Ingrese el nombre de la persona: ");
-        nombrePersona = sc.nextLine();
-        System.out.print("Ingrese el correo de la persona: ");
-        correoPersona = sc.nextLine();
-        System.out.print("Ingrese la contraseña de la persona: ");
-        contrasenaPersona = sc.nextLine();
-        System.out.print("Ingrese el rol de la persona (1-Administrador, 2-Profesor): ");
-        id_rol = sc.nextInt();
-    }
 
     public persona() {
     }
@@ -46,46 +29,6 @@ public abstract class persona {
     void creandoPersona() {
         System.out.println("creando usuario persona");
     }
-
-    // public String getIdentificacionPersona() {
-    //     return identificacionPersona;
-    // }
-
-    // public void setIdentificacionPersona(String identificacionPersona) {
-    //     this.identificacionPersona = identificacionPersona;
-    // }
-
-    // public String getNombrePersona() {
-    //     return nombrePersona;
-    // }
-
-    // public void setNombrePersona(String nombrePersona) {
-    //     this.nombrePersona = nombrePersona;
-    // }
-
-    // public String getCorreoPersona() {
-    //     return correoPersona;
-    // }
-
-    // public void setCorreoPersona(String correoPersona) {
-    //     this.correoPersona = correoPersona;
-    // }
-
-    // public String getContrasenaPersona() {
-    //     return contrasenaPersona;
-    // }
-
-    // public void setContrasenaPersona(String contrasenaPersona) {
-    //     this.contrasenaPersona = contrasenaPersona;
-    // }
-
-    // public int getId_rol() {
-    //     return id_rol;
-    // }
-
-    // public void setId_rol(int id_rol) {
-    //     this.id_rol = id_rol;
-    // }
 
     public abstract void mostrarRol();
     

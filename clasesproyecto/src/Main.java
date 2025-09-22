@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) throws Exception {
 
-// herencias y super clases
+// herencias y super clase
 
         horarioAdmin ha = new horarioAdmin(1, "2025-01-01", "2025-06-31", "08:00", "10:00", "2025-01-01", "2025-06-31",
                 "lunes", "logica", "bello", "503", "987654321");
